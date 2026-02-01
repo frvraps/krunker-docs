@@ -116,7 +116,7 @@ Look at the start of the file. If it starts with `{"map":{"name":`, you tried to
 ![](https://github.com/frvraps/krunker-docs/blob/main/assets/illegal-chars.png?raw=true)
 
 ### 1.3.19 What is Z-fighting?
-Z-fighting is a graphical glitch where two objects occupy the same Z-buffer, particularly when two heterogeneous faces are coplanar. It produces a fragmented zig-zag pattern. At large scale, this can be irritating and even uncomfortable to look at. It is important to note that at large distances, Z-fighting may occur for non-coplanar faces, so separate by larger distances for very large maps.. As an example, in the classic map [bhop_Ravine]([Krunker Hub - Gaming Community, Trading & Social Features](https://krunker.io/social.html?p=map&q=bhop_Ravine)), things start breaking down visually when you reach the highest levels.
+Z-fighting is a graphical glitch where two objects occupy the same Z-buffer, particularly when two heterogeneous faces are coplanar. It produces a fragmented zig-zag pattern. At large scale, this can be irritating and even uncomfortable to look at. It is important to note that at large distances, Z-fighting may occur for non-coplanar faces, so separate by larger distances for very large maps.. As an example, in the classic map [bhop_Ravine](https://krunker.io/social.html?p=map&q=bhop_Ravine), things start breaking down visually when you reach the highest levels.
 
 Z-fighting is a hard visual glitch to hunt down, and it even appears in longstanding rotation maps, like Citadel.
 
