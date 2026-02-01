@@ -70,9 +70,11 @@ Two approaches can generally resolve this problem: a) press the **navigate** but
 **Edit > Settings > Object** and switch the **Create Near** option on. This will create each new object at your current location.
 ### 1.3.3 The map I'm editing is very large, and the sprint speed is unbearably slow.
 **Help > Controls > Movement > Speed** and set **Sprinting** to a higher value. A value of 300-400 will be sufficient for most large maps.
+
 ![Displaying speed](https://github.com/frvraps/krunker-docs/blob/main/assets/sprint-speed.png?raw=true)
 ### 1.3.4 Why can I walk through a wall and/or why is there an invisible wall when I didn't put one there?
 This is a common symptom of the *rotation of collidable objects*. For beginners, we strongly recommend avoiding rotation of any object the player will interact with. By default, the game does not consider the rotation when calculating collisions, so the real collision volume will be the unrotated object. 
+
 Many new mapmakers resort to rotation to simply swap the x and z scale parameters. This can be accomplished more quickly (and without issues) by pressing **F** while focused on an object. If you like to rotate things for decoration, it may behoove you to enable the setting **Show Real Hitbox** under **Edit > Settings > Game**. If you must have a rotated collision (this is most tolerable for walls), you may choose to enable **complex collisions**.
 ### 1.3.5 Why don't complex collisions work as expected? Why can't I slidehop on them? Why do I slip off?
 Complex collisions use a pill-shaped collision box for the player, and weren't tuned to fit within Krunker's physics style. Avoid use where this variation poses a risk to gameplay. They generally work acceptably with walls. They also consume your limited file size very quickly, as every triangle is explicitly defined, even for primitives like cubes.
@@ -90,7 +92,9 @@ Grouping can be done in two primary ways:
 2. Press **N** to turn on **Group Selection Mode**. Select objects by clicking on them. Once you are done selecting, press **N** again, and an object will be created. This is most useful for grouping a small number of objects, or objects that are interspersed with ones you do not want to group.
 ### 1.3.11 What is "world" and "local" space?
 These settings determine the coordinate system used for transformations. In world space, moving an object up will strictly increase its Y-value relative to the scene, regardless of the object's orientation. Conversely, in local space, transformations occur along the object’s own rotated axes. While terminology varies across 3D software, **world** and **local** are functionally identical to "global" and "object" space. 
+
 This visual explanation is helpful:
+
 ![World vs local space](https://github.com/frvraps/krunker-docs/blob/main/assets/local-global-rotation.png?raw=true)
 ### 1.3.12 What is the "create near" option?
 When a user creates an object from the object creation menu in the toolbar, it will appear at the camera's location. When this setting is off, each object will be created at the origin, which can be inconvenient.
@@ -108,14 +112,17 @@ Yes, you can, for some things. This requires modifying the JSON file. See sectio
 
 ### 1.3.18 Why am I getting "Invalid map format" or "Illegal characters in map name" errors when trying to host my map?
 Look at the start of the file. If it starts with `{"map":{"name":`, you tried to use the save file. The save file **cannot be used to host maps**. Use the export file instead. See 1.3.8.
+
 ![](https://github.com/frvraps/krunker-docs/blob/main/assets/illegal-chars.png?raw=true)
 
 ### 1.3.19 What is Z-fighting?
 Z-fighting is a graphical glitch where two objects occupy the same Z-buffer, particularly when two heterogeneous faces are coplanar. It produces a fragmented zig-zag pattern. At large scale, this can be irritating and even uncomfortable to look at. It is important to note that at large distances, Z-fighting may occur for non-coplanar faces, so separate by larger distances for very large maps.. As an example, in the classic map [bhop_Ravine]([Krunker Hub - Gaming Community, Trading & Social Features](https://krunker.io/social.html?p=map&q=bhop_Ravine)), things start breaking down visually when you reach the highest levels.
+
 Z-fighting is a hard visual glitch to hunt down, and it even appears in longstanding rotation maps, like Citadel.
+
 ![Z-fighting on Citadel](https://github.com/frvraps/krunker-docs/blob/main/assets/z-fighting-citadel.png?raw=true)
 
 ### 1.3.20 I have my resolution set high, why is my resolution in reality so low?
 This is often caused by accidental zooming. If a user decreases page zoom, the GUI will hardly change, whereas the viewscreen will have a very low resolution and the gizmos will be the wrong size. The resolution can be resolved by fixing your page zoom, but you may need to copy your map file, refresh, and re-import to resolve the gizmo size changes. Be mindful that `CTRL + 0` opens up the scripting window, so use `CTRL + +` and `CTRL + -`.
-![Low resolution example](https://github.com/frvraps/krunker-docs/blob/main/assets/low-resolution.png?raw=true)
 
+![Low resolution example](https://github.com/frvraps/krunker-docs/blob/main/assets/low-resolution.png?raw=true)
