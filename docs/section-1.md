@@ -27,7 +27,7 @@
 - *Toggle collidable:* `Shift + C`
 - *Toggle visibility:* `Shift + V`
 ### 1.1.5 Object (advanced)
-**NOTE:** Those pertaining to object *creation* will **create near** the camera regardless of whether *create near* is on in the settings or not.
+**NOTE:** Those about object *creation* will **create near** the camera regardless of whether the  *create near* setting is enabled.
 - *Open texture / model list:* `T` (must have object selected)
 - *Open scripting window:* `0`
 - *Create placeholder:* `P`
@@ -75,7 +75,7 @@ Two approaches can generally resolve this problem: a) press the **navigate** but
 ### 1.3.4 Why can I walk through a wall and/or why is there an invisible wall when I didn't put one there?
 This is a common symptom of the *rotation of collidable objects*. For beginners, we strongly recommend avoiding rotation of any object the player will interact with. By default, the game does not consider the rotation when calculating collisions, so the real collision volume will be the unrotated object. 
 
-Many new mapmakers resort to rotation to simply swap the x and z scale parameters. This can be accomplished more quickly (and without issues) by pressing **F** while focused on an object. If you like to rotate things for decoration, it may behoove you to enable the setting **Show Real Hitbox** under **Edit > Settings > Game**. If you must have a rotated collision (this is most tolerable for walls), you may choose to enable **complex collisions**.
+Many new mapmakers resort to rotation to simply swap the x and z scale parameters. This can be accomplished more quickly (and without issues) by pressing **F** while focused on an object. If you like to rotate things for decoration, it is prudent to enable the setting **Show Real Hitbox** under **Edit > Settings > Game**. If you must have a rotated collision (this is most tolerable for walls), you may choose to enable **complex collisions**.
 ### 1.3.5 Why don't complex collisions work as expected? Why can't I slidehop on them? Why do I slip off?
 Complex collisions use a pill-shaped collision box for the player, and weren't tuned to fit within Krunker's physics style. Avoid use where this variation poses a risk to gameplay. They generally work acceptably with walls. They also consume your limited file size very quickly, as every triangle is explicitly defined, even for primitives like cubes.
 ### 1.3.6 How can I get started making maps?
@@ -118,7 +118,7 @@ Look at the start of the file. If it starts with `{"map":{"name":`, you tried to
 ![](../assets/illegal-chars.png)
 
 ### 1.3.19 What is Z-fighting?
-Z-fighting is a graphical glitch where two objects occupy the same Z-buffer, particularly when two heterogeneous faces are coplanar. It produces a fragmented zig-zag pattern. At large scale, this can be irritating and even uncomfortable to look at. It is important to note that at large distances, Z-fighting may occur for non-coplanar faces, so separate by larger distances for very large maps.. As an example, in the classic map [bhop_Ravine](https://krunker.io/social.html?p=map&q=bhop_Ravine), things start breaking down visually when you reach the highest levels.
+Z-fighting is a graphical glitch where two objects have the same depth value in the Z-buffer, particularly when two faces with a different texture or color overlap. It produces a fragmented zig-zag pattern. This can be irritating and even uncomfortable to look at. It is important to note that at large distances, Z-fighting may occur for faces that are not overlapping (but close), so move them out by larger distances for very large maps. As an example, in the classic map [bhop_Ravine](https://krunker.io/social.html?p=map&q=bhop_Ravine), things start breaking down visually when you reach the highest levels.
 
 Z-fighting is a difficult visual glitch to hunt down, and it even appears in longstanding rotation maps, like Citadel.
 
