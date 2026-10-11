@@ -138,7 +138,7 @@ This is frequently caused by having no *collidable* objects in the map with **Sh
 Only client-side KrunkScript is run in the sandbox. Host the game instead to test server-side code.
 
 ### 1.3.23 I closed my tab/my computer crashed and I lost my progress. What do I do?
-Fortunately, Krunker's editor has a backup feature. One close and refresh, the editor saves the map file to your browser. If you edit on an Incognito tab or if you clear browser data, you will lose these files. Access them from **File > Load Backup**.
+Fortunately, Krunker's editor has a backup feature. Upon close and refresh, the editor saves the map file to your browser. If you edit on an Incognito tab or if you clear browser data, you will lose these files. Access them from **File > Load Backup**.
 
 ![](../assets/backups.png)
 
