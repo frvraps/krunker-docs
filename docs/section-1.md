@@ -141,3 +141,28 @@ Only client-side KrunkScript is run in the sandbox. Host the game instead to tes
 Fortunately, Krunker's editor has a backup feature. One close and refresh, the editor saves the map file to your browser. If you edit on an Incognito tab or if you clear browser data, you will lose these files. Access them from **File > Load Backup**.
 
 ![](../assets/backups.png)
+
+### 1.3.24 Why is my map's thumbnail not updating as expected?
+To save on load time and reduce required further downloads, browsers (including "clients", which are specially packaged browsers) retain certain files in a **cache**. This failure to update can be corrected by clearing cache, or by waiting a few days.  
+
+### 1.3.25 Why are KR triggers disabled? How can I earn KR from my maps? 
+KR triggers were broadly disabled upon release of Season 10 to combat perverse incentives that created a problematic relationship between mapmakers and players. Now, enabling KR triggers is done through the new **Studio** feature. "Monetization" of a studio carries several initial eligibility requirements, and continued access requires continued compliance with the guidelines. Applications are manually reviewed by FRVR staff. Further information can be found in section 1.4.
+
+## 1.4.0 Studios
+### 1.4.1 Map monetization requirements
+- Account at least 3 months old
+- Level 20 or higher
+- 2FA enabled
+- No account bans in the last 6 months
+- At least one published map in the studio.
+
+### 1.4.2 Map monetization guidelines
+1. **Original work only.** Your maps must be your studio's own work. No reuploads, ripped maps or barely changed templates.
+2. **Free to finish.** Every map must be fully playable and completable without paying. Skips aren't allowed on maps that pay out KR rewards.
+3. **Clear prices.** Always show the price and exactly what the player gets before they pay.
+4. **No gambling.** Players must never pay for a chance to win KR, tradable items or anything worth something outside your map, and players can't bet against each other. Prize wheels may only award items and currencies that stay in your map, and must show the cost and the odds of every prize.
+5. **No paying to beat other players.** Nothing a player buys may change a round against other players: no nukes, no damaging, slowing or penalising others, no team-wide effects. Upgrades and boosts are only allowed where players fight the map, not each other.
+6. **No entry fees.** Never charge players to join, play or stay in a map.
+7. **No spam or pressure.** Keep purchases in a store or clearly marked spots. No flooding the map with paid triggers or prompts, no fake timers, no misleading prompts, and no promising rewards you don't deliver.
+8. **Krunker's rules apply.** Maps, names, thumbnails and studio skins must follow the Krunker Terms. No NSFW, hate, impersonation or stolen assets.
+9. **Enforcement.** We can review your maps at any time. Breaking these rules can get monetization revoked. Serious or repeated breaks stop the studio and its owner from applying again.
